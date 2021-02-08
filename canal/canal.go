@@ -427,6 +427,7 @@ func (c *Canal) prepareSyncer() error {
 		DisableRetrySync:        c.cfg.DisableRetrySync,
 		TimestampStringLocation: c.cfg.TimestampStringLocation,
 		TLSConfig:               c.cfg.TLSConfig,
+		Localhost: c.cfg.Localhost,
 	}
 
 	if strings.Contains(c.cfg.Addr, "/") {
